@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 일반 함수 정의 방식과 익명함수 선언 참조방식의 차이점
+        // 일반 함수 정의는 함수 호출 시 호이스팅을 지원한다. 호이스팅을 적용하면 호출문이 정의문 보다 먼저나와도 정의문을 끌어올려서 함수를 호출합니다.
+
+        var count = 0;
+
+        myFun();
+
+        function myFun(){
+            count++;
+            document.write(`hello${count}<br>`)
+        }
+
+        myFun();
+
+        var theFun = function(){
+            count++;
+            document.write(`bye${count}<br>`)
+        }
+
+        theFun();
+
+
+
+    </script>
+</body>
+</html>

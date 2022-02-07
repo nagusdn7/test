@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// var type = ['a','b','c','d'];
+// var settings = {
+//     SERVER_INFO : "ORACLE",
+//     SERVER_IP : "127.0.0.1",
+//     PORT : "1521",
+//     SID : "ORCL"
+// };
+
+// var SERVER_INFO = settings.SERVER_INFO;
+// var SERVER_IP = settings.SERVER_IP;
+// var PORT = settings.PORT;
+// var SID = settings.SID;
+// console.log(SERVER_INFO ,  SERVER_IP , PORT , SID);
+// console.log(type[0] , type[1] , type[2] , type[3])
+
+let type = ['a','b','c','d'];
+let settings = {
+    SERVER_INFO : "ORACLE",
+    SERVER_IP : "127.0.0.1",
+    PORT : "1521",
+    SID : "ORCL"
+};
+
+let [a,b,c,d] = type;
+let {SERVER_INFO , SERVER_IP, PORT, SID} = settings;
+console.log(SERVER_INFO ,  SERVER_IP , PORT , SID);
+console.log(a,b,c,d);
+
+    </script>
+</body>
+</html>
